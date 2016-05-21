@@ -3,51 +3,105 @@
 ---
 @charset "utf-8";
 
+@mixin retina {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 144dppx) {
+    @content;
+  }
+}
 
+@mixin blog-container {
+  .container {
+    @media (min-width: 48em) {
+      max-width: 720px;
+    }
+  }
+}
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+section {
+  padding: 4rem 0 4rem;
+}
 
-$spacing-unit:     30px;
+pre,
+code {
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    background-color: #eef;
+}
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+code {
+    padding: 1px 5px;
+}
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
 
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
+.blog {
+  > .container {
+    @media (min-width: 48em) {
+      max-width: 720px;
+    }
+  }
+}
 
+.post {
+  > .container {
+    @media (min-width: 48em) {
+      max-width: 720px;
+    }
+  }
+}
+
+.social-action {
+
+  margin-top: 3rem;
+
+  .twitter-share-button {
+    vertical-align: bottom;
+  }
+}
+
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero {
+  background-image: url('../assets/layouts/blog-hero.jpg');
+  height: 400px;
+  max-height: 400px;
+  min-height: 400px;
+
+	@include retina {
+  	background-image: url('../assets/layouts/blog-hero_2x.jpg');
+	}
+
+  &.post {
+    background-image: none;
+  }
+
+  .overlay {
+  	background-color: transparent;
+
+    &.post {
+      background-color: #398ECA;
+    }
+	}
+
+
+}
+
+.post-header {
+  margin-top: 3rem;
+}
+
+.post-title {
+  margin-bottom: 0.5rem;
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+@import "syntax-highlighting";

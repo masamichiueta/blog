@@ -1,36 +1,30 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
+<footer class="footer text-xs-center">
+    <div class="container">
+      <div>
+        <ul class="list-inline social-list">
+          <li class="list-inline-item">
+            <a target="_blank" href="//www.facebook.com/masamichi.ueta.1" ><i class="fa fa-facebook fa-lg"></i></a>
           </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
+          <li class="list-inline-item">
+            <a target="_blank" href="//twitter.com/micchyboy" ><i class="fa fa-twitter fa-lg"></i></a>
           </li>
-          {% endif %}
+          <li class="list-inline-item">
+            <a target="_blank" href="//www.instagram.com/micchyboy/" ><i class="fa fa-instagram fa-lg"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="//github.com/micchyboy1023"><i class="fa fa-github fa-lg"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="//medium.com/@micchyboy"><i class="fa fa-medium fa-lg"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="//qiita.com/micchyboy"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss fa-lg"></i></a>
+          </li>
         </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+        <p>© 2011-2016 Masamichi Ueta</p>
       </div>
     </div>
-
-  </div>
-
-</footer>
+  </footer>
