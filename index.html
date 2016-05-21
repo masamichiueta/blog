@@ -2,20 +2,31 @@
 layout: default
 ---
 
-<div class="home">
+<section class="hero text-xs-center">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <div class="container">
+      <h1>MU Design Engineering Blog</h1>
+    </div>
+  </div>
+</section>
 
-  <!-- <h1 class="page-heading">Posts</h1> -->
+<section class="blog">
+  <div class="container">
+    <div class="posts">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <ul class="list-unstyled">
+        {% for post in site.posts %}
+          <li>
+            <small class="text-muted">{{ post.date | date: "%b %-d, %Y" }}</small>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+            <h2>
+              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+          </li>
+        {% endfor %}
+      </ul>
 
-</div>
+    </div>
+  </div>
+</section>

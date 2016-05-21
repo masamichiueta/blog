@@ -7,13 +7,14 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+
+    {{ content }}
+
 
     {% include footer.html %}
+
+    <script src="{{ "/js/vendor.js" | prepend: site.url }}"></script>
+    <script src="{{ "/js/site.js" | prepend: site.url }}"></script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
