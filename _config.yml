@@ -17,8 +17,11 @@ twitter_username: micchyboy
 github_username:  micchyboy1023
 author: Masamichi Ueta
 
+paginate: 10
+
 # Build settings
 markdown: kramdown
 
 gems:
   - jekyll-seo-tag
+  - jekyll-paginate
