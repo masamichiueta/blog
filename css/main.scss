@@ -9,14 +9,6 @@
   }
 }
 
-@mixin blog-container {
-  .container {
-    @media (min-width: 48em) {
-      max-width: 720px;
-    }
-  }
-}
-
 section {
   padding-top: 4rem;
 }
@@ -44,11 +36,6 @@ pre {
 }
 
 .blog {
-  > .container {
-    @media (min-width: 48em) {
-      max-width: 720px;
-    }
-  }
 
   .posts {
     .post-title {
@@ -69,11 +56,6 @@ pre {
 }
 
 .post-content {
-  > .container {
-    @media (min-width: 48em) {
-      max-width: 720px;
-    }
-  }
 
   .article-body {
     h1, h2, h3, h4, h5, h6 {

@@ -6,7 +6,7 @@ categories:
 ---
 I started my new blog using Jekyll.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 print("Hello World.")
 let title = "MU Design Engineering Blog"
