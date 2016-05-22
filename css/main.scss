@@ -49,22 +49,39 @@ pre {
       max-width: 720px;
     }
   }
+
+  .posts {
+    .post-title {
+      font-size: 20px;
+    }
+  }
 }
 
 .post {
+
+  .post-header {
+    margin-top: 3rem;
+  }
+
+  .post-title {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.post-content {
   > .container {
     @media (min-width: 48em) {
       max-width: 720px;
     }
   }
-}
 
-.social-action {
+  .social-action {
 
-  margin-top: 3rem;
+    margin-top: 3rem;
 
-  .twitter-share-button {
-    vertical-align: bottom;
+    .twitter-share-button {
+      vertical-align: bottom;
+    }
   }
 }
 
@@ -91,16 +108,6 @@ pre {
       background-color: #398ECA;
     }
 	}
-
-
-}
-
-.post-header {
-  margin-top: 3rem;
-}
-
-.post-title {
-  margin-bottom: 0.5rem;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)

@@ -20,7 +20,6 @@ let whatToWrite = [
 
 {% endhighlight %}
 
-Please check out [my portfolio site][portfolio-site] for my works.
 Thanks!
 
 [portfolio-site]: http://uetamasamichi.com
