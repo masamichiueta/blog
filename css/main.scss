@@ -35,8 +35,51 @@ pre {
     }
 }
 
-.blog {
+.blog-hero {
+  background-image: url('../assets/layouts/blog-hero.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	color: #fff;
+	padding: 48px 0 0 0;
+	position: relative;
 
+	@include retina {
+  	background-image: url('../assets/layouts/blog-hero_2x.jpg');
+	}
+
+	.overlay {
+  	background-color: #252b33;
+    opacity: .35;
+  	height: 100%;
+  	left: 0;
+  	position: absolute;
+  	top: 0;
+  	width: 100%;
+	}
+
+  .blog-hero-content {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 190px 0;
+    position: relative;
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0 0 1rem 0;
+    }
+  }
+}
+
+.background-image-none {
+  background-image: none;
+}
+
+.background-color-main {
+  background-color: #398ECA !important;
+  opacity: 1.0 !important;
+}
+
+.blog {
   .posts {
     .post-title {
       font-size: 1.6rem;
@@ -44,19 +87,7 @@ pre {
   }
 }
 
-.post {
-
-  .post-header {
-    margin-top: 3rem;
-  }
-
-  .post-title {
-    margin-bottom: 0.5rem;
-  }
-}
-
 .post-content {
-
   .article-body {
     h1, h2, h3, h4, h5, h6 {
       margin-top: 2rem;
@@ -98,30 +129,7 @@ pre {
   }
 }
 
-/* Hero
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.hero {
-  background-image: url('../assets/layouts/blog-hero.jpg');
-  height: 400px;
-  max-height: 400px;
-  min-height: 400px;
 
-	@include retina {
-  	background-image: url('../assets/layouts/blog-hero_2x.jpg');
-	}
-
-  &.post {
-    background-image: none;
-  }
-
-  .overlay {
-  	background-color: transparent;
-
-    &.post {
-      background-color: #398ECA;
-    }
-	}
-}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "syntax-highlighting";
