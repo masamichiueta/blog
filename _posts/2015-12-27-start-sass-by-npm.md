@@ -6,7 +6,7 @@ categories: development
 hero-image:
 ---
 
-> This post was originally posted in (Qiita)[http://qiita.com/micchyboy/items/0074f002d8f1663577a2] at 12/27 2015.
+> This post was originally posted in [Qiita](http://qiita.com/micchyboy/items/0074f002d8f1663577a2) at 12/27 2015.
 
 ---
 
