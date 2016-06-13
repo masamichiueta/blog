@@ -21,6 +21,7 @@ paginate: 10
 
 # Build settings
 markdown: kramdown
+future: true
 
 gems:
   - jekyll-seo-tag
