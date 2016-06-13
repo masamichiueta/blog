@@ -11,8 +11,8 @@ email: masamichi1023@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   I'm Masamichi. Design Thinker, Design Engineer in Japan
 
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "http://uetamasamichi.com" # the base hostname & protocol for your site
+baseurl: /blog # the subpath of your site, e.g. /blog
+url: http://uetamasamichi.com # the base hostname & protocol for your site
 twitter_username: micchyboy
 github_username:  micchyboy1023
 author: Masamichi Ueta
