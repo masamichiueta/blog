@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "WWDC 2016 Keynote Summary"
-date:   2016-06-14
+title: "WWDC 2016 Keynote Summary"
+date: 2016-06-14
 categories: development
 hero-image: "2016-06-14.jpg"
 ---
@@ -147,4 +147,3 @@ hero-image: "2016-06-14.jpg"
   - run swift code on iPad
   - Developer Preview from Today, coming in fall
   - Free
-  
