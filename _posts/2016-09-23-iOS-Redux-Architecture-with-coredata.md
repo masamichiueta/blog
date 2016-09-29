@@ -21,10 +21,47 @@ I created a sample app using ReSwift with CoreData.
 
 # Inside the sample app
 
-There is only one entity named `User`.
+There is only one entity named `ManagedUser`.
 The sample is a simple application to add and update users.
 
 ![model]({{ site.baseurl }}/assets/posts/2016-09-23/model.png)
+
+The key point of Redux is immutable state.
+But `NSManagedObject` is not value type, so direct manipulation of the instance mutates the state.
+
+To avoid mutation, I created `User` struct and mapped `ManagedUser` to `User`.
+
+{% highlight swift %}
+public class ManagedUser: NSManagedObject {
+
+    func toUser() -> User {
+        return User(objectID: self.objectID.uriRepresentation().absoluteString, name: self.name ?? "", age: Int(self.age))
+    }    
+
+    ...
+}
+{% endhighlight %}
+
+
+{% highlight swift %}
+struct User {
+
+    var objectID: String?
+    var name: String
+    var age: Int
+
+    init(name: String, age: Int) {
+        self.init(objectID: nil, name: name, age: age)
+    }
+
+    init(objectID: String?, name: String, age: Int) {
+        self.objectID = objectID
+        self.name = name
+        self.age = age
+    }
+
+}
+{% endhighlight %}
 
 ---
 
@@ -41,37 +78,33 @@ In this sample, I created one State named `AppState`.
 `AppState` has all users.
 
 {% highlight swift %}
-
 struct AppState: StateType {
-
     var users: [User] = []
-
 }
-
 {% endhighlight %}
 
 ## Action
 
-There are three actions, `AddUser`, `UpdateUserName` and `UpdateUserAge`.
+There are three actions, `FetchUser` `AddUser`, `UpdateUserName` and `UpdateUserAge`.
 
 {% highlight swift %}
+struct FetchUser: Action {
+    let users: [User]
+}
 
 struct AddUser: Action {
     let user: User
 }
 
 struct UpdateUserName: Action {
-    let objectID: NSManagedObjectID
+    let objectID: String
     let name: String
-
 }
 
 struct UpdateUserAge: Action {
-    let objectID: NSManagedObjectID
-    let age: Int16
+    let objectID: String
+    let age: Int
 }
-
-
 {% endhighlight %}
 
 
@@ -80,7 +113,6 @@ struct UpdateUserAge: Action {
 `AppReducer` handles actions and create new state.
 
 {% highlight swift %}
-
 struct AppReducer: Reducer {
 
     func handleAction(action: Action, state: AppState?) -> AppState {
@@ -88,14 +120,18 @@ struct AppReducer: Reducer {
         var state = state ?? AppState()
 
         switch action {
+        case let action as FetchUser:
+            state.users = action.users
+
         case let action as AddUser:
             state.users.append(action.user)
 
         case let action as UpdateUserName:
+
             let users = state.users.map({ user -> User in
 
-                if user.objectID.isEqual(action.objectID) {
-                    user.name = action.name
+                if let objectID = user.objectID, objectID == action.objectID {
+                    return User(objectID: objectID, name: action.name, age: user.age)
                 }
 
                 return user
@@ -106,8 +142,8 @@ struct AppReducer: Reducer {
         case let action as UpdateUserAge:
             let users = state.users.map({ user -> User in
 
-                if user.objectID.isEqual(action.objectID) {
-                    user.age = action.age
+                if let objectID = user.objectID, objectID == action.objectID {
+                    return User(objectID: objectID, name: user.name, age: action.age)
                 }
 
                 return user
@@ -122,8 +158,6 @@ struct AppReducer: Reducer {
         return state
     }
 }
-
-
 {% endhighlight %}
 
 
@@ -138,13 +172,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     var mainStore: Store<AppState>!
-
+    var userRepository: UserRepository!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
 
-        let users = User.fetch(moc: persistentContainer.viewContext)
-        mainStore = Store<AppState>(reducer: AppReducer(), state: AppState(users: users))
+        userRepository = UserRepository(context: persistentContainer.viewContext)
+        self.mainStore = Store<AppState>(reducer: AppReducer(), state: AppState())    
 
         return true
     }
@@ -152,9 +185,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ...
 
 {% endhighlight %}
-
-To fetch saved users, I initialized the store in `func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool`.
-
 
 # ViewControllers
 
@@ -171,6 +201,22 @@ After reducers handle actions, `newState(state: AppState)` function is called. S
 ## TableViewController
 
 `TableViewController` has all users in users property.
+
+In `viewDidLoad`, `TableViewController` fetches all users from db.
+
+{% highlight swift %}
+override func viewDidLoad() {
+    super.viewDidLoad()
+    self.userRepository = appDelegate.userRepository
+
+    self.userRepository.fetchUsers(completionHandler: { users, error in
+        if error == nil {
+            appDelegate.mainStore.dispatch(FetchUser(users: users!))
+        }
+    })
+}
+{% endhighlight %}
+
 Inside `newState(state: AppState)`, users update to the latest state, and tableView is reloaded.
 
 `TableViewController` has a right bar button item to add a new user.
@@ -179,13 +225,14 @@ When the button tapped, a new user is created and `AddUser` action is dispatched
 {% highlight swift %}
 
 @IBAction func addButtonDidTap(_ sender: AnyObject) {
-  let user = User(context: appDelegate.persistentContainer.viewContext)
-  user.name = "Albert Einstein"
-  user.age = 78
-  appDelegate.saveContext()
+  let user = User(name: "Albert Einstein", age: 78)
 
-  //Dispatch Action
-  appDelegate.mainStore.dispatch(AddUser(user: user))       
+  self.userRepository.createUser(user: user, completionHandler: { user, error in
+      if error == nil {
+          //Dispatch Action
+          appDelegate.mainStore.dispatch(AddUser(user: user!))
+      }
+  })     
 }
 
 {% endhighlight %}
@@ -200,6 +247,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
   if segue.identifier == "Show" {
     let vc = segue.destination as! DetailViewController
     vc.user = self.users[self.tableView.indexPathForSelectedRow!.row]
+    vc.userRepository = self.userRepository
   }
 }
 
@@ -212,17 +260,14 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 When `nameTextField` is edited, `UpdateUserName` action is dispatched, and when `ageTextField` is edited, `UpdateUserAge` action is dispatched.
 
 {% highlight swift %}
-
 @IBAction func nameTextFieldEditingChanged(_ sender: UITextField) {
-  appDelegate.mainStore.dispatch(UpdateUserName(objectID: self.user.objectID, name: sender.text ?? ""))
+    appDelegate.mainStore.dispatch(UpdateUserName(objectID: self.user.objectID!, name: sender.text ?? ""))
 }
-
 
 @IBAction func ageTextFieldEditingChanged(_ sender: UITextField) {
-  let age = Int16(sender.text!) ?? -1
-  appDelegate.mainStore.dispatch(UpdateUserAge(objectID: self.user.objectID, age: age))
+    let age = Int(sender.text!) ?? -1
+    appDelegate.mainStore.dispatch(UpdateUserAge(objectID: self.user.objectID!, age: age))
 }
-
 {% endhighlight %}
 
 
@@ -232,22 +277,22 @@ If `nameTextField` is empty or `ageTextField` is incorrect, save button is disab
 
 func newState(state: AppState) {
 
-  guard let currentUser = state.users.filter({
-      $0.objectID.isEqual(self.user.objectID)
-  }).first else {
-      return
-  }
+    guard let currentUser = state.users.filter({
+        $0.objectID == self.user.objectID
+    }).first else {
+        return
+    }
 
-  self.user = currentUser
+    self.user = currentUser
 
-  if self.user.name == "" || self.user.age < 0 {
-      self.saveButton.isEnabled = false
-  } else {
-      self.saveButton.isEnabled = true
-  }
+    if self.user.name == "" || self.user.age < 0 {
+        self.saveButton.isEnabled = false
+    } else {
+        self.saveButton.isEnabled = true
+    }
 
-  self.nameTextField.text = self.user.name
-  self.ageTextField.text = self.user.age < 0 ? "" : "\(self.user.age)"
+    self.nameTextField.text = self.user.name
+    self.ageTextField.text = self.user.age < 0 ? "" : "\(self.user.age)"
 }
 
 {% endhighlight %}
@@ -262,6 +307,6 @@ Please check my GitHub repository.
 
 ---
 
-# NEXT...
+# Next...
 
 I want to integrate Redux with UndoManager.
