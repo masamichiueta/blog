@@ -2,10 +2,10 @@
 layout: default
 ---
 {% if page.hero-image %}
-<section class="blog-hero text-xs-center" style="background-image: url({{ site.baseurl }}/assets/posts/{{ page.date | date: "%Y-%m-%d" }}/{{ page.hero-image }})">
+<section class="blog-hero text-center" style="background-image: url({{ site.baseurl }}/assets/posts/{{ page.date | date: "%Y-%m-%d" }}/{{ page.hero-image }})">
   <div class="overlay"></div>
 {% else %}
-<section class="blog-hero background-image-none text-xs-center">
+<section class="blog-hero background-image-none text-center">
   <div class="overlay background-color-main"></div>
 {% endif %}
   <div class="blog-hero-content">

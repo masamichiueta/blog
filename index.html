@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="blog-hero text-xs-center">
+<section class="blog-hero text-center">
   <div class="overlay"></div>
   <div class="blog-hero-content">
     <div class="container">
@@ -33,7 +33,7 @@ layout: default
 
         <!-- Pagination links -->
         {% if paginator.total_pages > 1 %}
-        <div class="pagination center-block text-xs-center">
+        <div class="pagination text-center">
           {% if paginator.previous_page %}
             <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
           {% else %}
