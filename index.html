@@ -11,20 +11,19 @@ layout: default
   </div>
 </section>
 
-<section>
+<section class="py-5">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8">
         <div class="posts">
-
           <ul class="list-unstyled">
             {% for post in paginator.posts %}
-              <li>
+              <li class="pb-4">
                 <small class="text-muted">{{ post.date | date: "%b %-d, %Y" }}</small>
 
-                <h2>
+                <h3>
                   <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
+                </h3>
               </li>
             {% endfor %}
           </ul>
@@ -33,25 +32,25 @@ layout: default
 
         <!-- Pagination links -->
         {% if paginator.total_pages > 1 %}
-        <div class="pagination text-center">
+        <div class="pagination d-flex justify-content-center">
           {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+            <a class="mr-3" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
           {% else %}
-            <span>&laquo; Prev</span>
+            <span class="mr-3" >&laquo; Prev</span>
           {% endif %}
 
           {% for page in (1..paginator.total_pages) %}
             {% if page == paginator.page %}
-              <em>{{ page }}</em>
+              <em class="mr-3">{{ page }}</em>
             {% elsif page == 1 %}
-              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+              <a class="mr-3" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
             {% else %}
-              <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+              <a class="mr-3" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
             {% endif %}
           {% endfor %}
 
           {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+            <a class="mr-3" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
           {% else %}
             <span>Next &raquo;</span>
           {% endif %}

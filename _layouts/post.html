@@ -8,7 +8,7 @@ layout: default
 <section class="blog-hero background-image-none text-center">
   <div class="overlay background-color-main"></div>
 {% endif %}
-  <div class="blog-hero-content">
+  <div class="d-flex align-items-center justify-content-between h-100 position-relative">
     <div class="container">
       <h1 itemprop="name headline">{{ page.title }}</h1>
       <p><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
@@ -16,21 +16,18 @@ layout: default
   </div>
 </section>
 
-<section class="post-content">
+<section class="post-content py-5">
   <div class="container">
-    <div class="row">
-      <div class="offset-md-2 col-md-8 offset-sm-0 col-sm-12">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
         <article itemscope itemtype="http://schema.org/BlogPosting">
 
           <div class="article-body" itemprop="articleBody">
             {{ content }}
           </div>
-
-          <div class="social-action">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-via="micchyboy">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            <div class="fb-like" data-href="{{ post.url | prepend: site.baseurl }}" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+          <div class="pt-5">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="micchyboy">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>          
           </div>
-
         </article>
       </div>
     </div>
