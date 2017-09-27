@@ -1,39 +1,26 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
 @charset "utf-8";
 
-@mixin retina {
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 144dppx) {
-    @content;
-  }
-}
+// pre,
+// code {
+//     border: 1px solid #e8e8e8;
+//     border-radius: 3px;
+//     background-color: #eef;
+// }
 
-section {
-  padding-top: 4rem;
-}
+// code {
+//     padding: 1px 5px;
+// }
 
-pre,
-code {
-    border: 1px solid #e8e8e8;
-    border-radius: 3px;
-    background-color: #eef;
-}
+// pre {
+//     padding: 8px 12px;
+//     overflow-x: auto;
 
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: auto;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
+//     > code {
+//         border: 0;
+//         padding-right: 0;
+//         padding-left: 0;
+//     }
+// }
 
 .blog-hero {
   background-image: url('../assets/layouts/blog-hero.jpg');
@@ -44,10 +31,6 @@ pre {
 	padding: 48px 0 0 0;
 	position: relative;
 
-	@include retina {
-  	background-image: url('../assets/layouts/blog-hero_2x.jpg');
-	}
-
 	.overlay {
   	background-color: #252b33;
     opacity: .35;
@@ -57,17 +40,6 @@ pre {
   	top: 0;
   	width: 100%;
 	}
-
-  .blog-hero-content {
-    margin-bottom: 0;
-    margin-top: 0;
-    padding: 190px 0;
-    position: relative;
-
-    h1, h2, h3, h4, h5, h6 {
-      margin: 0 0 1rem 0;
-    }
-  }
 }
 
 .background-image-none {
@@ -78,58 +50,6 @@ pre {
   background-color: #398ECA !important;
   opacity: 1.0 !important;
 }
-
-.blog {
-  .posts {
-    .post-title {
-      font-size: 1.6rem;
-    }
-  }
-}
-
-.post-content {
-  .article-body {
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    h1 {
-      font-size: 2.4rem;
-    }
-
-    h2 {
-      font-size: 2.0rem;
-    }
-
-    h3 {
-      font-size: 1.6rem;
-    }
-
-    h4 {
-      font-size: 1.2rem;
-    }
-
-    h5 {
-      font-size: 1rem;
-    }
-
-    h6 {
-      font-size: 1rem;
-    }
-  }
-
-  .social-action {
-
-    margin-top: 3rem;
-
-    .twitter-share-button {
-      vertical-align: bottom;
-    }
-  }
-}
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "syntax-highlighting";
