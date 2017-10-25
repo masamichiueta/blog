@@ -16,15 +16,19 @@ layout: default
     <div class="row justify-content-center">
       <div class="col-12 col-md-8">
         <div class="posts">
-          <ul class="list-unstyled">
+          <ul class="list-unstyled pb-5">
             {% for post in paginator.posts %}
-              <li class="pb-4">
-                <small class="text-muted">{{ post.date | date: "%b %-d, %Y" }}</small>
-
+              <li class="pb-4 pt-4">  
+                <small class="text-muted">{{ post.date | date: "%Y/%-m/%-d" }}</small>                    
                 <h3>
                   <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h3>
+                {% if post.hero-image %}
+                <div class="my-4 media-img rounded" style="background-image: url({{ site.baseurl }}/assets/posts/{{ post.date | date: "%Y-%m-%d" }}/{{ post.hero-image }})">
+                </div>
+                {% endif %}
               </li>
+              <hr />
             {% endfor %}
           </ul>
 

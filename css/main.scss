@@ -59,6 +59,16 @@ img {
   opacity: 1.0 !important;
 }
 
+.media-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  height: 300px;
+  min-height: 300px;
+}
+
 .post-content {
 	h1, h2, h3, h4, h5, h6 {
 		margin-top: 3rem;

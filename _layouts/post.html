@@ -11,7 +11,7 @@ layout: default
   <div class="d-flex align-items-center justify-content-between h-100 position-relative">
     <div class="container">
       <h1 itemprop="name headline">{{ page.title }}</h1>
-      <p><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+      <p><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y/%-m/%-d" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
     </div>
   </div>
 </section>
