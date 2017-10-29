@@ -45,16 +45,7 @@ hero-image:
 ルイス・ヘンリー・サリヴァンの「形は常に機能に従う」という言葉は機能と形の融合を目指す言葉として使われるが、この言葉こそ形と機能のコントラストを浮かび上がらせたものではないかと書かれている。そして、バウハウスにはじまる20世紀のデザインでは、機能主義的な側面を浮かび上がらせるたまに機能という概念を形から分離してしまったのではないかと考える。
 
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3655474149264343"
-     data-ad-slot="9606645212"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+{% include ad.html %}
 
 バウハウスはそのようなことを目的としていたのではないが、アメリカに渡り大量生産を核とする資本主義経済と結びつくことで、形の専門家が切り出されたと指摘している。
 

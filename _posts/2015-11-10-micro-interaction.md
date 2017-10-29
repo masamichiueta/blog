@@ -20,16 +20,7 @@ hero-image:
 また本書の中では、20世紀のモダニズム建築を代表するミース・ファン・デル・ローエの「Less is more」（「God is in the detail 神は細部に宿る」なども提唱）や、20世紀のデザイナー、チャールズ・イームズの「細部は単なる細部にとどまらない。細部こそが製品を作り上げる」や、Braunのデザイナ、ティーター・ラムスの「Good design is thorough down to the last detail」など、著名なデザイナーの格言が取り上げられている。
 
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3655474149264343"
-     data-ad-slot="9606645212"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+{% include ad.html %}
 
 # マイクロインタラクションとは
 
