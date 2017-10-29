@@ -29,6 +29,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  word-break: break-all;
+}
+
 .blog-hero {
   background-image: url('../assets/layouts/blog-hero.jpg');
   background-position: center center;
