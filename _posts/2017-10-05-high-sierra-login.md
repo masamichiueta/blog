@@ -11,17 +11,7 @@ High Sierraにアップグレード後、ログイン画面に自分のユーザ
 
 ゲストログインはオフにしていたのでゲストではありません。
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-3655474149264343"
-     data-ad-slot="9606645212"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
+{% include ad.html %}
 
 結論をかくと、rootユーザーがなぜか有効化されていました。
 
