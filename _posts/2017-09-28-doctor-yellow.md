@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "大井車両基地でドクターイエローを見てきました"
+description: "先週の日曜日に、東京都品川区にあるJR東海の大井車両基地に、息子と行ってきました。"
+image: "/assets/posts/2017-09-28.jpg"
 date: 2017-09-28
 categories: family
 hero-image: "2017-09-28.jpg"
