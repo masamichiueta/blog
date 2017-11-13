@@ -3,7 +3,7 @@ layout: post
 title:  "【書評】HELLO WORLD 「デザイン」が私たちに必要な理由"
 date:   2016-01-15
 categories: design
-hero-image:
+lang: ja_JP
 ---
 
 > This post was originally posted in [Medium](https://medium.com/@micchyboy/書評-hello-world-デザイン-が私たちに必要な理由-756de750e52a#.wv28nmigo) at 01/15 2016.

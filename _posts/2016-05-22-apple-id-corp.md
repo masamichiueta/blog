@@ -3,6 +3,7 @@ layout: post
 title:  "How to register iOS Developer Program as a Corporation in Japan?"
 date:   2016-05-22
 categories: development
+lang: en_US
 ---
 
 ## What I need

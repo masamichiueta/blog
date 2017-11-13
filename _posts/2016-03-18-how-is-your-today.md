@@ -3,7 +3,7 @@ layout: post
 title:  "How is your today?"
 date:   2016-03-18
 categories: development
-hero-image:
+lang: en_US
 ---
 
 > This post was originally posted in [Medium](https://medium.com/@micchyboy/how-is-your-today-b52f693b17e6#.dug8v845o) at 03/18 2016.

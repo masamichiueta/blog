@@ -4,6 +4,7 @@ title: "iOS Redux Architecture with CoreData"
 description: "I started to lean Redux architecture recently.Redux is super simple and easy to understand."
 date: 2016-09-23
 categories: development
+lang: en_US
 ---
 
 # iOS meets Redux

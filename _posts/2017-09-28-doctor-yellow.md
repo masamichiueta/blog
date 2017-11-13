@@ -6,6 +6,7 @@ image: "/assets/posts/2017-09-28.jpg"
 date: 2017-09-28
 categories: family
 hero-image: "2017-09-28.jpg"
+lang: ja_JP
 ---
 
 # 大井車両基地

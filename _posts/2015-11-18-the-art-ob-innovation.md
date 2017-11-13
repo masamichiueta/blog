@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "【書評】発想する会社! ― 世界最高のデザイン・ファームIDEOに学ぶイノベーションの技法"
+description: "2002年に発売された、「発想する会社！」を読みました。「デザイン思考」や「デザインシンキング」といった言葉が最近注目を集めていますが、本書はそれらの言葉を生み出したシリコンバレーのデザインファーム「IDEO」のゼネラルマネージャー トム・ケリー氏が書いた本です。"
 date:   2015-11-18
 categories: design
-hero-image:
+lang: ja_JP
 ---
 
 > This post was originally posted in [Medium](https://medium.com/@micchyboy/書評-発想する会社-世界最高のデザイン-ファームideoに学ぶイノベーションの技法-6f730b3df9aa#.d0o2g9lup) at 11/18 2015.

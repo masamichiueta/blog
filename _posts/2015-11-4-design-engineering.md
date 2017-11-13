@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "【書評】一橋ビジネスレビュー デザインエンジニアリング"
+description: "一橋ビジネスレビューのデザインエンジニアリング特集を読んだ。本書では、デザインとエンジニアリングの統合と、デザインとエンジニアリングの視点を兼ね備えたデザインエンジニアという人材の必要性について述べられている。私自身、デザインエンジニアとして活動していたいという想いがあり、本書は参考になった。"
 date:   2015-11-04
 categories: design
-hero-image:
+lang: ja_JP
 ---
 
 > This post was originally posted in [Medium](https://medium.com/@micchyboy/書評-一橋ビジネスレビュー-デザインエンジニアリング-99eed6fb6f6e#.j0o1kyrh8) at 11/04 2015.

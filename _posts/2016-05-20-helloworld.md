@@ -2,8 +2,9 @@
 layout: post
 title:  "Hello World"
 date:   2016-05-20
-categories:
+categories: family
 hero-image: "2016-05-20.jpg"
+lang: en_US
 ---
 I started my new blog using Jekyll.
 
