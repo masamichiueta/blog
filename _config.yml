@@ -6,15 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Masamichi Ueta - Blog
-email: masamichi1023@gmail.com
+title: micchyboy - Blog
 description: デザインエンジニア micchyboyのエンジニアリング・デザイン・日常について投稿するブログ。系は開発はSwift, iOSが中心。
 
 baseurl: /blog # the subpath of your site, e.g. /blog
 url: https://micchyboy1023.github.io # the base hostname & protocol for your site
 twitter_username: micchyboy
 github_username:  micchyboy1023
-author: Masamichi Ueta
+author: micchyboy
 lang: ja_JP
 
 paginate: 10
