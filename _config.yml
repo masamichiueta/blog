@@ -22,6 +22,6 @@ paginate: 10
 markdown: kramdown
 future: true
 
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-paginate
