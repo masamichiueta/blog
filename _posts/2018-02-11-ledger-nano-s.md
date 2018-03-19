@@ -3,7 +3,6 @@ layout: post
 title: "仮想通貨を安全に保存！ハードウェアウォレット Ledger Nano Sの使い方"
 description: "仮想通貨を安全に保存！ハードウェアウォレット Ledger Nano Sの使い方"
 date: 2018-02-11
-image: "/assets/posts/2018-02-11/cover.png"
 hero-image: "cover.png"
 categories: cryptocurrency
 lang: ja_JP

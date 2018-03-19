@@ -3,7 +3,6 @@ layout: post
 title: "Twitterアイコンにおすすめ！スヌーピーのアイコンをゲットできるサイトの紹介"
 description: "Twitterアイコンにおすすめ！スヌーピーのアイコンをゲットできるサイトの紹介"
 date: 2018-03-17
-image: "/assets/posts/2018-03-17/cover.png"
 hero-image: "cover.png"
 categories: design
 lang: ja_JP
