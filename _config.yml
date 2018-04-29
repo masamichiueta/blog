@@ -30,6 +30,9 @@ category_slugs:
   gadget: "ガジェット"
 
 plugins:
-  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-default-layout
+  - jekyll-github-metadata
   - jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-category-pages
