@@ -17,7 +17,7 @@ layout: default
 <section class="py-5">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-md-9">
         <div class="posts">
           <ul class="list-unstyled pb-5">
             {% for post in paginator.posts %}
@@ -36,25 +36,8 @@ layout: default
           </ul>
         </div>
       </div>
-      <div class="col-12 offset-md-1 col-md-3 order-last order-md-2 mt-5 mt-md-0">
-        <div>
-          <h3>カテゴリー</h3>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link py-1" href="{{ site.baseurl }}/">全て({{ site.posts | size }})</a>
-            </li>
-          {% for category in site.categories %}
-            <li class="nav-item">
-              {% if category[0] == page.category %}
-                {% assign disabled = 'disabled' %}
-              {% else %}
-                {% assign disabled = '' %}
-              {% endif %}
-              <a class="nav-link {{disabled}} py-1" href="{{ site.baseurl }}/category/{{ category | first | url_encode }}/index.html">{{ category | first | slug2name }}({{category[1].size}})</a>
-            </li>
-          {% endfor %}
-          </ul>
-        </div>
+      <div class="col-12 col-md-3 order-last order-md-2 mt-5 mt-md-0">
+          {% include sidebar.html %}
       </div>
       <div class="col-12 order-md-3">
         <!-- Pagination links -->

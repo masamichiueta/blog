@@ -11,7 +11,6 @@ layout: default
   <div class="d-flex align-items-center justify-content-between h-100 position-relative">
     <div class="container">
       <h1 itemprop="name headline">{{ page.title }}</h1>
-      <p><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y/%-m/%-d" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
     </div>
   </div>
 </section>
@@ -19,16 +18,58 @@ layout: default
 <section class="post-content py-5">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-md-9">
         <article itemscope itemtype="http://schema.org/BlogPosting">
-
           <div class="article-body" itemprop="articleBody">
+            <p class="text-muted"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y/%-m/%-d" }}</time><span class="ml-3">{{ page.categories| first | slug2name }}</span></p>
             {{ content }}
           </div>
           <div class="pt-5">
             <a href="https://twitter.com/share" class="twitter-share-button" data-via="micchyboy">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>          
           </div>
         </article>
+        <hr />
+        <div>
+        <h3>オススメ記事</h3>
+          <ul class="list-unstyled pb-5">
+          {% assign maxRelated = 4 %}
+          {% assign minCommonCategories =  1 %}
+          {% assign maxRelatedCounter = 0 %}
+
+          {% for post in site.posts %}
+            {% assign sameCategoryCount = 0 %}
+
+            {% for category in post.categories %}
+              {% if post.url != page.url %}
+                {% if page.categories contains category %}
+                  {% assign sameCategoryCount = sameCategoryCount | plus: 1 %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+            {% if sameCategoryCount >= minCommonCategories %}
+              <li class="pb-4 pt-4">
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                  <small class="decoration-none text-muted">{{ post.date | date: "%Y/%-m/%-d" }}<span class="ml-2">{{ post.categories | first | slug2name }}</span></small>                    
+                  <h3 class="mt-0">{{ post.title }}</h3>
+                  {% if post.hero-image %}
+                  <div class="my-4 media-img rounded" style="background-image: url({{ site.baseurl }}/assets/posts/{{ post.date | date: "%Y-%m-%d" }}/{{ post.hero-image }})">
+                  </div>
+                  {% endif %}
+                </a>
+              </li>
+              <hr />
+              {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+              {% if maxRelatedCounter >= maxRelated %}
+                {% break %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+          {% include sidebar.html %}
       </div>
     </div>
     <!-- blog -->
