@@ -36,3 +36,4 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-category-pages
+  - jekyll-sitemap
