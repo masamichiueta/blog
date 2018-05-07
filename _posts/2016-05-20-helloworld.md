@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Hello World"
-date:   2016-05-20
+description: "I started my new blog using Jekyll."
+date: 2016-05-20
 categories: family
 hero-image: "2016-05-20.jpg"
 lang: en_US

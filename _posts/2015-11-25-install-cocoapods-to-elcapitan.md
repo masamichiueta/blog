@@ -2,7 +2,7 @@
 layout: post
 title:  "OS X 10.10.11 El Capitan にCocoaPodsをインストールする"
 description: "OS X 10.10.11 El Capitan にCocoaPodsをインストールする"
-date:   2015-11-25
+date: 2015-11-25
 categories: development
 hero-image: "2015-11-25.jpg"
 lang: en_US
