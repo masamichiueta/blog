@@ -4,20 +4,23 @@
   {% include head.html %}
 
   <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=482236818644387";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
     {% include header.html %}
 
+    <!-- blog_text -->
+    <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-3655474149264343"
+    data-ad-slot="3735741647"
+    data-ad-format="auto"></ins>
 
     {{ content }}
 
+    <!-- blog_text -->
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-3655474149264343"
+      data-ad-slot="3735741647"
+      data-ad-format="auto"></ins>
 
     {% include footer.html %}
 
@@ -35,7 +38,8 @@
       ga('send', 'pageview');
 
     </script>
-
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   </body>
-
 </html>
