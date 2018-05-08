@@ -7,7 +7,7 @@ categories: design
 lang: ja_JP
 ---
 
-> This post was originally posted in [Medium](https://medium.com/@micchyboy/書評-発想する会社-世界最高のデザイン-ファームideoに学ぶイノベーションの技法-6f730b3df9aa#.d0o2g9lup) at 11/18 2015.
+> This post was originally posted in [Medium](https://medium.com/@micchyboy1023/書評-発想する会社-世界最高のデザイン-ファームideoに学ぶイノベーションの技法-6f730b3df9aa#.d0o2g9lup) at 11/18 2015.
 
 ---
 

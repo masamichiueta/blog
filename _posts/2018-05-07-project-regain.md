@@ -19,9 +19,9 @@ REGAIN（リゲイン）の目的は
 とのこと。
 
 <a href="https://affiliate.project-regain.io/link.php?intro=66c9fff20f8ba39db4a1c8567baeb9d2&addrid=cc1dfd03c7a4e8257993db4fa52e2630" target="_blank" rel="nofollow">
-<img border="0" width="300" height="300" alt="" src="https://affiliate.project-regain.io/img/regain/300x300_en.png">
+<img border="0" width="300" height="300" alt="REGAIN" src="https://affiliate.project-regain.io/img/regain/300x300_en.png">
 </a>
-<img src="https://affiliate.project-regain.io/impression.php?intro=66c9fff20f8ba39db4a1c8567baeb9d2&addrid=cc1dfd03c7a4e8257993db4fa52e2630" width="1" height="1" border="0" alt=""/>
+<img src="https://affiliate.project-regain.io/impression.php?intro=66c9fff20f8ba39db4a1c8567baeb9d2&addrid=cc1dfd03c7a4e8257993db4fa52e2630" width="1" height="1" border="0" alt="REGAIN"/>
 
 
 上記ページからアクセスできます。
@@ -35,7 +35,7 @@ REGAIN（リゲイン）の目的は
 
 少額なので気にせず放置していましたが、4月16日にきちんと配当がもらえていました。
 
-![1]({{ site.baseurl }}/assets/posts/2018-05-07/1.png "1")
+![REGAIN 配当]({{ site.baseurl }}/assets/posts/2018-05-07/1.png "REGAIN 配当")
 
 `0.02881500REG`に対して、`0.00048985BTC`が付与されていました。
 
@@ -47,6 +47,6 @@ REGAIN（リゲイン）の目的は
 REGAIN（リゲイン）からのメールでは、配当を再投資して複利効果を最大化しましょうと強調されていたので、配当は再投資しておきました。
 まんまと乗せられている感はありつつも、少額なので気にせずそのまま乗せられてみるのもいいかなと思っています。
 
-![2]({{ site.baseurl }}/assets/posts/2018-05-07/2.png "2")
+![REGAI 配当　再投資]({{ site.baseurl }}/assets/posts/2018-05-07/2.png "REGAIN 配当　再投資")
 
 また、5月にどうなるかはレポートしたいと思います。5/15は来週ですね。

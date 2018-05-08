@@ -33,7 +33,7 @@ layout: default
             {{ content }}
           </div>
           <div class="pt-5">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-via="micchyboy">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>          
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="micchyboy1023">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>          
           </div>
         </article>
         <hr />
@@ -61,7 +61,7 @@ layout: default
                   <small class="decoration-none text-muted">{{ post.date | date: "%Y/%-m/%-d" }}<span class="ml-2">{{ post.categories | first | slug2name }}</span></small>                    
                   <h3 class="mt-0">{{ post.title }}</h3>
                   {% if post.hero-image %}
-                  <div class="my-4 media-img rounded" style="background-image: url({{ site.baseurl }}/assets/posts/{{ post.date | date: "%Y-%m-%d" }}/{{ post.hero-image }})">
+                  <div alt="{{post.title}}" class="my-4 media-img rounded" style="background-image: url({{ site.baseurl }}/assets/posts/{{ post.date | date: "%Y-%m-%d" }}/{{ post.hero-image }})">
                   </div>
                   {% endif %}
                 </a>

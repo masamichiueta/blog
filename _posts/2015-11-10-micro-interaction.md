@@ -7,7 +7,7 @@ categories: design
 lang: ja_JP
 ---
 
-> This post was originally posted in [Medium](https://medium.com/@micchyboy/書評-マイクロインタラクション-ui-uxデザインの神が宿る細部-619c42cf067e#.qsrvnqu1m) at 11/10 2015.
+> This post was originally posted in [Medium](https://medium.com/@micchyboy1023/書評-マイクロインタラクション-ui-uxデザインの神が宿る細部-619c42cf067e#.qsrvnqu1m) at 11/10 2015.
 
 ---
 

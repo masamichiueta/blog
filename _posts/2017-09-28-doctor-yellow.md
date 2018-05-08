@@ -16,7 +16,7 @@ lang: ja_JP
 
 <br />
 <br />
-![ドクターイエロー]({{ site.baseurl }}/assets/posts/2017-09-28/1.jpg)
+![ドクターイエロー]({{ site.baseurl }}/assets/posts/2017-09-28/doctoryellow.jpg "ドクターイエロー")
 
 <br />
 <br />
@@ -32,7 +32,7 @@ lang: ja_JP
 
 <br />
 <br />
-![合間から撮った写真]({{ site.baseurl }}/assets/posts/2017-09-28/2.jpg)
+![合間から撮った写真]({{ site.baseurl }}/assets/posts/2017-09-28/doctoryellow2.jpg "合間から撮った写真")
 <br />
 <br />
 
@@ -42,7 +42,7 @@ lang: ja_JP
 
 <br />
 <br />
-![こまちとはやぶさ]({{ site.baseurl }}/assets/posts/2017-09-28/3.jpg)
+![こまちとはやぶさ]({{ site.baseurl }}/assets/posts/2017-09-28/komachihayabusa.jpg "こまちとはやぶさ")
 <br />
 <br />
 

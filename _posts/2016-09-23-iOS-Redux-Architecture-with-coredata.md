@@ -29,7 +29,7 @@ I created a sample app using ReSwift with CoreData.
 There is only one entity named `ManagedUser`.
 The sample is a simple application to add and update users.
 
-![model]({{ site.baseurl }}/assets/posts/2016-09-23/model.png)
+![model]({{ site.baseurl }}/assets/posts/2016-09-23/model.png "model")
 
 The key point of Redux is immutable state.
 But `NSManagedObject` is not value type, so direct manipulation of the instance mutates the state.

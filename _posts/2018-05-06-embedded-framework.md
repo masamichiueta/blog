@@ -27,8 +27,8 @@ Embedded Framework(Cocoa Touch Framework)の導入方法や説明はこちらの
 
 分割前は、アプリ用のターゲットが1つあり、そのフォルダ以下にグループを作ってソースファイルを分割していました。
 
-![1]({{ site.baseurl }}/assets/posts/2018-05-06/1.png "1")
-![2]({{ site.baseurl }}/assets/posts/2018-05-06/2.png "2")
+![groups]({{ site.baseurl }}/assets/posts/2018-05-06/1.png "groups")
+![targets]({{ site.baseurl }}/assets/posts/2018-05-06/2.png "targets")
 
 ### アフター
 
@@ -46,8 +46,8 @@ Embedded Framework(Cocoa Touch Framework)の導入方法や説明はこちらの
     - CoreDataやKeychain, iCloudへデータを保存する。Model, APIに依存。
 
 
-![3]({{ site.baseurl }}/assets/posts/2018-05-06/3.png "3")
-![4]({{ site.baseurl }}/assets/posts/2018-05-06/4.png "4")
+![embedded frameworks]({{ site.baseurl }}/assets/posts/2018-05-06/3.png "embedded frameworks")
+![targets]({{ site.baseurl }}/assets/posts/2018-05-06/4.png "targets")
 
 
 ## 分割時のポイント
@@ -71,7 +71,7 @@ Embedded Framework(Cocoa Touch Framework)の導入方法や説明はこちらの
 
 フレームワークのターゲットを選択し、`Build Settings`の`Other Swift Flags`から追加します。
 
-![5]({{ site.baseurl }}/assets/posts/2018-05-06/5.png "5")
+![Build Setting Other Swift Flags]({{ site.baseurl }}/assets/posts/2018-05-06/5.png "Build Setting Other Swift Flags")
 
 ### CoreDataの初期化処理を変更する
 

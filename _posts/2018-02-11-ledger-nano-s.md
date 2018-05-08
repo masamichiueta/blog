@@ -29,7 +29,7 @@ lang: ja_JP
 
 ### Ledger Nano Sの現在の対応通貨
 
-![Ledger Nano Sの現在の対応通貨]({{ site.baseurl }}/assets/posts/2018-02-11/1.png "Ledger Nano Sの現在の対応通貨")
+![Ledger Nano Sの現在の対応通貨]({{ site.baseurl }}/assets/posts/2018-02-11/currencies.png "Ledger Nano Sの現在の対応通貨")
 
 ## 購入方法
 
@@ -45,7 +45,7 @@ Ledger Nano Sの購入ですが、今回私はフランスのLedger社から直�
 
 2018年1月3日では、1つ58.00€で、日本への送料が23.70€。合計139.70€でした。
 
-![Ledger Nano S]({{ site.baseurl }}/assets/posts/2018-02-11/2.png "Ledger Nano S")
+![Ledger Nano S]({{ site.baseurl }}/assets/posts/2018-02-11/receipt.png "Ledger Nano S")
 
 クレジットカードもしくはPaypalで支払うことが可能です。
 その時のレートで日本円で、19320円です。日本でも一つ12000円くらいするので、直接輸入するのとあまり変わらないかと思います。
@@ -55,12 +55,12 @@ Ledger Nano Sの購入ですが、今回私はフランスのLedger社から直�
 2018年1月3日にオーダーし、1月10日に無事自宅に配送されてきました。
 
 どん！
-![Ledger Nano S]({{ site.baseurl }}/assets/posts/2018-02-11/3.jpg "Ledger Nano S")
+![Ledger Nano S]({{ site.baseurl }}/assets/posts/2018-02-11/products.jpg "Ledger Nano S")
 
 パッケージはApple製品のようなスタイリッシュな感じで、好印象です。
 
 本体はこんな感じです。
-![Ledger Nano S]({{ site.baseurl }}/assets/posts/2018-02-11/4.jpg "Ledger Nano S")
+![Ledger Nano S]({{ site.baseurl }}/assets/posts/2018-02-11/products2.jpg "Ledger Nano S")
 
 
 ## 使い方
