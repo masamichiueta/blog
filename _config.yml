@@ -28,6 +28,7 @@ category_slugs:
   family: "家族"
   design: "デザイン"
   gadget: "ガジェット"
+  apps: "アプリ"
 
 plugins:
   - jekyll-gist
