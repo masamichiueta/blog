@@ -5,6 +5,13 @@ description: "I started to lean Redux architecture recently.Redux is super simpl
 date: 2016-09-23
 categories: development
 lang: en_US
+tags:
+- iOS
+- Swift
+- Xcode
+- Redux
+- ReSwift
+- CoreData
 ---
 
 # iOS meets Redux

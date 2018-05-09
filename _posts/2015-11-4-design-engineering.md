@@ -5,6 +5,10 @@ description: "一橋ビジネスレビューのデザインエンジニアリン
 date: 2015-11-04
 categories: design
 lang: ja_JP
+tags:
+- design
+- デザインエンジニアリング
+- 書評
 ---
 
 > This post was originally posted in [Medium](https://medium.com/@micchyboy1023/書評-一橋ビジネスレビュー-デザインエンジニアリング-99eed6fb6f6e#.j0o1kyrh8) at 11/04 2015.

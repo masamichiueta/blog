@@ -6,6 +6,11 @@ date: 2018-04-30
 categories: family
 hero-image: "cover.jpg"
 lang: ja_JP
+tags:
+- みなとみらい
+- 臨港公園
+- 横浜
+- お出かけ
 ---
 
 # 横浜みなとみらいお出かけスポット！臨港公園にピクニックに行って来ました

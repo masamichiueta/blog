@@ -6,6 +6,9 @@ date: 2016-06-14
 categories: development
 hero-image: "2016-06-14.jpg"
 lang: en_US
+tags:
+- Apple
+- WWDC
 ---
 
 # Hello, WWDC16

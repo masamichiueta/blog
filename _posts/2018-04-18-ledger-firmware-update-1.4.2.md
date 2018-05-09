@@ -5,6 +5,10 @@ description: "Ledger Nano Sのファームウェア1.4.2へアップグレード
 date: 2018-04-18
 categories: cryptocurrency
 lang: ja_JP
+tags:
+- ledger nano s
+- ファームウェア
+- ripple
 ---
 
 # Ledger Nano S ファームウェア1.4.2

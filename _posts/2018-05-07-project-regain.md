@@ -6,6 +6,15 @@ date: 2018-05-07
 categories: cryptocurrency
 hero-image: "cover.png"
 lang: ja_JP
+tags:
+- 仮想通貨
+- regain
+- リゲイン
+- ico
+- bitcoin
+- ビットコイン
+- mining
+- マイニング
 ---
 
 # プロジェクトREGAIN（リゲイン）

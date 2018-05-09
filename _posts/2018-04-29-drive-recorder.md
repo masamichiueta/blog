@@ -6,6 +6,9 @@ date: 2018-04-29
 categories: family
 hero-image: "cover.jpg"
 lang: ja_JP
+tags:
+- ドライブレコーダー
+- BRISE
 ---
 
 # BRISIE ドライブレコーダーを導入しました

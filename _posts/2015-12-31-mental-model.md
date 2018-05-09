@@ -5,6 +5,11 @@ description: "本書は、メンタルモデルを活用し、ユーザーのニ
 date: 2015-12-31
 categories: design
 lang: ja_JP
+tags:
+- UI
+- UX
+- design
+- 書評
 ---
 
 > This post was originally posted in [Medium](https://medium.com/@micchyboy1023/書評-メンタルモデル-ユーザーへの共感から生まれるuxデザイン戦略-3b92a153671e#.i6i8sb6qm) at 12/31 2015.

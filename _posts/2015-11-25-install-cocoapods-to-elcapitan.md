@@ -5,7 +5,11 @@ description: "OS X 10.10.11 El Capitan にCocoaPodsをインストールする"
 date: 2015-11-25
 categories: development
 hero-image: "2015-11-25.jpg"
-lang: en_US
+lang: js_JP
+tags:
+- iOS
+- CocoaPods
+- Xcode
 ---
 
 > This post was originally posted in [Qiita](http://qiita.com/micchyboy1023/items/26440acb62a71d22b255) at 11/25 2015.

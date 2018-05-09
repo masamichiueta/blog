@@ -6,6 +6,10 @@ date: 2018-02-11
 hero-image: "cover.png"
 categories: cryptocurrency
 lang: ja_JP
+tags:
+- 仮想通貨
+- ledger nano s
+- ハードウェアウォレット
 ---
 
 ## ハードウェアウォレット Ledger Nano S

@@ -5,6 +5,9 @@ description: "UXデザインを志すものとして、読まなければなら�
 date: 2016-01-15
 categories: design
 lang: ja_JP
+tags:
+- design
+- 書評
 ---
 
 > This post was originally posted in [Medium](https://medium.com/@micchyboy1023/書評-hello-world-デザイン-が私たちに必要な理由-756de750e52a#.wv28nmigo) at 01/15 2016.

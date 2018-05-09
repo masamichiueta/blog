@@ -37,6 +37,13 @@ layout: default
                   <div alt="{{post.title}}" class="my-4 media-img rounded" style="background-image: url({{ site.baseurl }}/assets/posts/{{ post.date | date: "%Y-%m-%d" }}/{{ post.hero-image }})">
                   </div>
                   {% endif %}
+                  {% if post.tags %}
+                  <p class="mb-0">
+                    {% for tags in post.tags %}
+                    <span class="badge badge-light">{{ tags }}</span>
+                    {% endfor %}
+                  </p>
+                  {% endif %} 
                 </a>
               </li>
               <hr />

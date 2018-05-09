@@ -5,6 +5,10 @@ description: "High Sierraにアップグレード後、ログイン画面に自�
 date: 2017-10-05
 categories: development
 lang: ja_JP
+tags:
+- Apple
+- macOS
+- High Sierra
 ---
 
 # Others

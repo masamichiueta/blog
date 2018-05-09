@@ -5,6 +5,12 @@ description: "Embedded Frameworkを使ってiOSアプリを適当なレイヤー
 date: 2018-05-06
 categories: development
 lang: ja_JP
+tags:
+- ios
+- swift
+- embedded framework
+- xcode
+- apple
 ---
 
 開発しているiOSアプリのソースが割と増えてきたので、リファクタリングついでにEmbedded Frameworkd(Cocoa Touch Framework)に分割しました。

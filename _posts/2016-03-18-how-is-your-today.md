@@ -5,6 +5,9 @@ description: "I released an iOS app named Today - Score Everyday.What you do in 
 date: 2016-03-18
 categories: development
 lang: en_US
+tags:
+- iOS
+- App
 ---
 
 > This post was originally posted in [Medium](https://medium.com/@micchyboy1023/how-is-your-today-b52f693b17e6#.dug8v845o) at 03/18 2016.

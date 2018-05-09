@@ -6,6 +6,10 @@ date: 2018-03-17
 hero-image: "cover.png"
 categories: design
 lang: ja_JP
+tags:
+- スヌーピー
+- ピーナッツ
+- peanutizeme
 ---
 
 # スヌーピーキャラクターを作ろう

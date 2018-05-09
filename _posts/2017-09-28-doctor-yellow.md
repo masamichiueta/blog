@@ -6,6 +6,10 @@ date: 2017-09-28
 categories: family
 hero-image: "2017-09-28.jpg"
 lang: ja_JP
+tags:
+- ドクターイエロー
+- 大井車両基地
+- 鉄道
 ---
 
 # 大井車両基地

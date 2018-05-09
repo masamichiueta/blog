@@ -5,6 +5,9 @@ description: "The following list is what I need to register iOS Developer Progra
 date: 2016-05-22
 categories: development
 lang: en_US
+tags:
+- iOS
+- Apple
 ---
 
 ## What I need

@@ -5,6 +5,10 @@ description: "2002年に発売された、「発想する会社！」を読み�
 date: 2015-11-18
 categories: design
 lang: ja_JP
+tags:
+- デザイン
+- IDEO
+- 書評
 ---
 
 > This post was originally posted in [Medium](https://medium.com/@micchyboy1023/書評-発想する会社-世界最高のデザイン-ファームideoに学ぶイノベーションの技法-6f730b3df9aa#.d0o2g9lup) at 11/18 2015.

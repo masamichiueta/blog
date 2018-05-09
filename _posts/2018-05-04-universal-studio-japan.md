@@ -6,6 +6,11 @@ date: 2018-05-04
 categories: family
 hero-image: "cover.jpg"
 lang: ja_JP
+tags:
+- usj
+- ユニバーサルスタジオジャパン
+- エクスプレスパス
+- ゴールデンウィーク
 ---
 
 # ゴールデンウィークに家族でUSJに行ってきました

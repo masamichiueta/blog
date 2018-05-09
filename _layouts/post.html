@@ -30,6 +30,14 @@ layout: default
         <article itemscope itemtype="http://schema.org/BlogPosting">
           <div class="article-body" itemprop="articleBody">
             <p class="text-muted"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y/%-m/%-d" }}</time><span class="ml-3">{{ page.categories| first | slug2name }}</span></p>
+            {% if page.tags %}
+            <p>
+              <small>タグ</small>
+              {% for tags in page.tags %}
+              <span class="badge badge-light">{{ tags }}</span>
+              {% endfor %}
+            </p>
+            {% endif %}
             {{ content }}
           </div>
           <div class="pt-5">

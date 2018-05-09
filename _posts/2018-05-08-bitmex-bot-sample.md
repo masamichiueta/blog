@@ -6,6 +6,13 @@ date: 2018-05-08
 categories: cryptocurrency
 hero-image: "cover.png"
 lang: ja_JP
+tags: 
+- 仮想通貨
+- bitmex
+- ビットコイン
+- bitcoin
+- bot
+- ボット
 ---
 
 # BitMEX ビットコインFXの自動取引Botのサンプル
