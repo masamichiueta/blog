@@ -27,17 +27,10 @@ REGAIN（リゲイン）の目的は
 
 とのこと。
 
-<a href="https://affiliate.project-regain.io/link.php?intro=66c9fff20f8ba39db4a1c8567baeb9d2&addrid=cc1dfd03c7a4e8257993db4fa52e2630" target="_blank" rel="nofollow">
-<img border="0" width="300" height="300" alt="REGAIN" src="https://affiliate.project-regain.io/img/regain/300x300_en.png">
-</a>
-<img src="https://affiliate.project-regain.io/impression.php?intro=66c9fff20f8ba39db4a1c8567baeb9d2&addrid=cc1dfd03c7a4e8257993db4fa52e2630" width="1" height="1" border="0" alt="REGAIN"/>
-
-
-上記ページからアクセスできます。
-
 ホワイトペーパーには、第1段階のクラウドセール購入で、`1REG 4000ドル（約45万円)`、`1REGあたり0.034BTC/月（報酬見込み）`、`月利8.5%`, `年利102%`と書いてありまして、こんなに本当にもらえるのか？という感じでした。
 
 もらえないとか詐欺だったら危ないなと思ったので、遊びの感覚で当時のレートで2万円くらいでICOに参加してみました。まぁ、本当にお試しという感覚です。
+詐欺だったら、残念！という感じですかね。
 
 
 ## 配当がもらえました
