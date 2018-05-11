@@ -1,2 +1,3 @@
 # blog
-blog for my site.
+
+This repository is not used anymore.
